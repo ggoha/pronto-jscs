@@ -31,7 +31,7 @@ module Pronto
     end
 
     def js_file?(path)
-      File.extname(path) == '.js'
+      %w(.js .jsx).include? File.extname(path)
     end
   end
 end
